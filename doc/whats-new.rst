@@ -396,6 +396,10 @@ New features
 
 Bug fixes
 ~~~~~~~~~
+- :py:meth:`DataArray.plot.line` now draws lines sharing a hue value with the
+  same color and deduplicates their legend entries, consistent with
+  :py:meth:`DataArray.plot.scatter` (:issue:`10998`, :pull:`11164`).
+  By `Harikrishna KP <https://github.com/Mr-Neutr0n>`_.
 - Fix error raised when writing scalar variables to Zarr with ``region={}``
   (:pull:`10796`).
   By `Stephan Hoyer <https://github.com/shoyer>`_.
